@@ -26,7 +26,7 @@ const disabledKeyCodes = new Set([
 window.addEventListener(
   "keydown",
   function(e) {
-    if (disabledKeyCodes.has(e.which) && e.location == 3) {
+    if (disabledKeyCodes.has(e.which)) {
       e.stopPropagation();
     }
   },
